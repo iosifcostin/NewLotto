@@ -1,3 +1,5 @@
+
+
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
@@ -79,6 +81,23 @@ public class Main {
             i++;
         }
         //  System.out.println();
+        return a;
+
+    }
+
+    private static int[] getU(Random myNumbersMachine) {
+        Set<Integer> se = new HashSet<>();
+        int[] a = new int[6];
+
+        while (se.size() < 6) {
+            int nr = myNumbersMachine.nextInt(49) + 1;
+            se.add(nr);
+        }
+
+
+        // possible only in java 8 (using streams)
+        a = se.stream().mapToInt(Integer::intValue).toArray();
+
         return a;
 
     }
