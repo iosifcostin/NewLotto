@@ -27,7 +27,7 @@ public class Main {
 
         int counter = 0;
         int nrTickets = 0;
-        while (counter < 6) {
+        do {
             nrTickets++;
             counter = 0;
             // nr mele
@@ -37,10 +37,10 @@ public class Main {
 ;
 //            System.out.println(agencyNumbers);
 //            System.out.println(myNumbers);
-            Set<Integer> commonNumbers = new HashSet<>(myNumbers);
-            commonNumbers.retainAll(agencyNumbers);
-            System.out.println(commonNumbers);
-            if(commonNumbers.size() >= 5) {
+//            Set<Integer> commonNumbers = new HashSet<>(myNumbers);
+            myNumbers.retainAll(agencyNumbers);
+            System.out.println(myNumbers);
+            if(myNumbers.size() >= 5) {
                 counter = 6;
             }
 
@@ -51,10 +51,25 @@ public class Main {
 //
 //                }
 //            }
-        }
+        } while (counter < 6);
 
         System.out.println("");
         System.out.println("ionel ai nimerit 6 numere jucand:" + nrTickets);
+
+        System.out.println(myNumbers);
+
+        int index = 0;
+        Set<Integer> survivors = new HashSet<>();
+        for (Integer myNumber : myNumbers) {
+//            ++index;
+            index++;
+            if(myNumber % 2 == 0) {
+                System.out.println(index + ":" + myNumber);
+                survivors.add(myNumber);
+            }
+
+        }
+        System.out.println(survivors);
 
 
     }
