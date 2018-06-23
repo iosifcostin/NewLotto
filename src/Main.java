@@ -37,8 +37,8 @@ public class Main {
 ;
 //            System.out.println(agencyNumbers);
 //            System.out.println(myNumbers);
-            Set<Integer> commonNumbers = new HashSet<>(agencyNumbers);
-            commonNumbers.retainAll(myNumbers);
+            Set<Integer> commonNumbers = new HashSet<>(myNumbers);
+            commonNumbers.retainAll(agencyNumbers);
             System.out.println(commonNumbers);
             if(commonNumbers.size() >= 5) {
                 counter = 6;
