@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/target" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/Documents/Doctorat/AMR/jamr" value="1477512836000" />
+        <entry key="$PROJECT_DIR$/../../Scala-Distributed/example" value="1489423222000" />
+        <entry key="$PROJECT_DIR$/../../Scala-Distributed/w2_stackoverflow" value="1490273202000" />
+        <entry key="$PROJECT_DIR$/../../Scala-Distributed/w4_timeusage" value="1490270832000" />
+        <entry key="$PROJECT_DIR$/../../Scala-Distributed/wikipedia" value="1489508622000" />
+        <entry key="$PROJECT_DIR$/../../Scala-ParallelProg/W2_reductions" value="1465226482000" />
+        <entry key="$PROJECT_DIR$/../../Scala-ParallelProg/example" value="1456679356000" />
+        <entry key="$PROJECT_DIR$/../../Scala-ParallelProg/git/w3_kmeans" value="1465227434000" />
+        <entry key="$PROJECT_DIR$/../../Scala-ParallelProg/git/w4_barneshut" value="1465552684000" />
+        <entry key="$PROJECT_DIR$/../../Scala-ParallelProg/scalashop" value="1465225094000" />
+        <entry key="$PROJECT_DIR$/../../Scala-ProgramDesign/example" value="1457105870000" />
+        <entry key="$PROJECT_DIR$/../../Scala-ProgramDesign/git/w4_calculator" value="1465300146000" />
+        <entry key="$PROJECT_DIR$/../../Scala-ProgramDesign/streams" value="1464276252000" />
+        <entry key="$PROJECT_DIR$/../../Scala-ProgramDesign/w3_quickcheck" value="1464277370000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+</project>
