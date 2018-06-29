@@ -1,4 +1,4 @@
-import com.sun.tools.javac.util.ArrayUtils;
+
 
 import java.util.*;
 
@@ -13,16 +13,14 @@ public class DemoSet {
 
         Random myNumbersMachine = new Random();
 
-        int counter=0;
-        while(se.size()<6) {
+        int counter = 0;
+        while (se.size() < 6) {
             counter++;
             int nr = myNumbersMachine.nextInt(49) + 1;
             se.add(nr);
         }
 
-        System.out.println(se.size()+":"+counter);
-
-
+        System.out.println(se.size() + ":" + counter);
 
 
     }

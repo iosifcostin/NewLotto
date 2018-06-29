@@ -1,6 +1,7 @@
 
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
 
@@ -34,7 +35,7 @@ public class Main {
             myNumbers = getU(m, myNumbersMachine);
 
             // compar
-;
+            ;
 //            System.out.println(agencyNumbers);
 //            System.out.println(myNumbers);
 //            Set<Integer> commonNumbers = new HashSet<>(myNumbers);
@@ -59,17 +60,28 @@ public class Main {
         System.out.println(myNumbers);
 
         int index = 0;
-        Set<Integer> survivors = new HashSet<>();
-        for (Integer myNumber : myNumbers) {
-//            ++index;
-            index++;
-            if(myNumber % 2 == 0) {
-                System.out.println(index + ":" + myNumber);
-                survivors.add(myNumber);
-            }
 
+        Iterator<Integer> iterator = myNumbers.iterator();
+        while(iterator.hasNext()) {
+            Integer myNumber = iterator.next();
+            if(myNumber %2 != 0) {
+                System.out.println("Removing " + myNumber);
+//                myNumbers.remove(myNumber);
+                iterator.remove();
+            }
         }
-        System.out.println(survivors);
+
+//        for (Integer myNumber : myNumbers) {
+//            //            ++index;
+//            index++;
+//            if (myNumber % 2 != 0) {
+//                System.out.println(index + ":" + myNumber);
+//                myNumbers.remove(myNumber);
+//            }
+//
+//        }
+
+        System.out.println("my numbers" + myNumbers);
 
 
     }
